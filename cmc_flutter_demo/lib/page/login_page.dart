@@ -16,11 +16,41 @@ class _LoginPageState extends State<LoginPage>{
     // TODO: implement build
     return new StoreBuilder<UserState>(builder: (context,store){
      double size = 200;
-     return new Container(
-         child: Text("loginpage text"),
+     return Scaffold(
+       //
+       appBar: AppBar(
+         title: Text('aaa'),
+       ),
+       body: Center(
+         child: Text('abc'),
+       ),
      );
 
-
+//      return Scaffold(
+//        appBar: AppBar(
+//          title: Text(widget.title),
+//        ),
+//        body: new Container(
+//          child: new ListView.builder(
+//            itemBuilder: (context, index) {
+//              return new InkWell(
+//                onTap: () {
+//                  Navigator.of(context).pushNamed(routeLists[index]);
+//                },
+//                child: new Card(
+//                  child: new Container(
+//                    alignment: Alignment.centerLeft,
+//                    margin: EdgeInsets.symmetric(horizontal: 10),
+//                    height: 50,
+//                    child: new Text(routerName[index]),
+//                  ),
+//                ),
+//              );
+//            },
+//            itemCount: routers.length,
+//          ),
+//        ), // This trailing comma makes auto-formatting nicer for build methods.
+//      );
 
     });
   }
