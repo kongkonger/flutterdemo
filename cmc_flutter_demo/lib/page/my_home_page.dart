@@ -171,7 +171,10 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
           currentIndex: _selectedIndex,
-            selectedItemColor: Colors.blueAccent[200],
+            fixedColor:  Colors.blueAccent[200],
+            backgroundColor: Colors.purpleAccent,
+            type: BottomNavigationBarType.fixed,
+//            selectedItemColor: Colors.blueAccent[200],
           onTap: _onItemTapped,
         ),
 
